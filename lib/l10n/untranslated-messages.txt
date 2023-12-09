@@ -1,6 +1,6 @@
 {
   "en": [
-    "teste",
-    "helloWorldOn"
+    "timer",
+    "stopwatch"
   ]
 }

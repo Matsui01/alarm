@@ -14,5 +14,8 @@ ThemeData get light {
       surfaceTintColor: AppColors.primary,
       backgroundColor: AppColors.primary,
     ),
+    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      showUnselectedLabels: true,
+    ),
   );
 }
