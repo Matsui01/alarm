@@ -1,0 +1,6 @@
+{
+  "en": [
+    "teste",
+    "helloWorldOn"
+  ]
+}

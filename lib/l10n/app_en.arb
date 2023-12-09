@@ -1,0 +1,7 @@
+{
+  "welcome": "Welcome!",
+    "@welcome":{
+        "description": "Welcome to the user"
+    },
+  "alarm": "Alarm"
+}

@@ -1,6 +1,14 @@
+import 'package:alarm/get_it.dart';
+import 'package:alarm/router/router.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+
+import 'design/design.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  getItInit();
   runApp(const MainApp());
 }
 
@@ -9,12 +17,17 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp.router(
+      routerConfig: router,
+      title: AppLocalizations.of(context)!.alarm,
+      localizationsDelegates: const [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: const [Locale('pt', 'BR')],
+      theme: dark,
     );
   }
 }
