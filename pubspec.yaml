@@ -27,6 +27,8 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  floor_generator: ^1.4.2
+  test: ^1.24.9
 
 flutter:
   generate: true
